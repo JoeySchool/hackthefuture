@@ -8,22 +8,15 @@ param($Request, $TriggerMetadata)
 #endregion
 
 
-
-
-
 ## Start Making changes from here ##
 
 $url = "https://htfapi.azurewebsites.net/api/the-real-donald"
 $method = "POST"
 $body = @{
-    "sendFakeDonaldData": true
+    "sendFakeDonaldData" = $true
 }
+
 $jsonBody = $body | ConvertTo-Json
-
-
-
-
-
 
 
 
